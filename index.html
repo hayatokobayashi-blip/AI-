@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMERALD CITY FC | Official Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-emerald-900/95 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-futbol text-3xl text-emerald-400"></i>
+                    <span class="text-2xl font-black tracking-tighter">EMERALD CITY <span class="text-emerald-400">FC</span></span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 font-bold">
+                    <a href="#home" class="hover:text-emerald-400 transition">Home</a>
+                    <a href="#news" class="hover:text-emerald-400 transition">News</a>
+                    <a href="#matches" class="hover:text-emerald-400 transition">Matches</a>
+                    <a href="#team" class="hover:text-emerald-400 transition">Team</a>
+                    <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-emerald-800 px-4 pt-2 pb-6 space-y-2">
+            <a href="#home" class="block py-2 hover:text-emerald-400">Home</a>
+            <a href="#news" class="block py-2 hover:text-emerald-400">News</a>
+            <a href="#matches" class="block py-2 hover:text-emerald-400">Matches</a>
+            <a href="#team" class="block py-2 hover:text-emerald-400">Team</a>
+            <a href="#contact" class="block py-2 hover:text-emerald-400">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient h-screen flex items-center justify-center text-center text-white pt-20">
+        <div class="max-w-4xl px-4">
+            <h2 class="text-emerald-400 font-bold tracking-widest mb-4 uppercase">Rise as One</h2>
+            <h1 class="text-5xl md:text-8xl font-black mb-8 leading-tight">勝利の先にある<br>情熱を共に。</h1>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#matches" class="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-full font-bold transition flex items-center justify-center">
+                    次戦のチケットを購入 <i class="fas fa-chevron-right ml-2"></i>
+                </a>
+                <a href="#team" class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full font-bold border border-white/30 transition">
+                    選手紹介を見る
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-24 max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-end mb-12">
+            <div>
+                <h2 class="text-emerald-600 font-bold mb-2">LATEST NEWS</h2>
+                <h3 class="text-4xl font-black italic">最新ニュース</h3>
+            </div>
+            <a href="#" class="text-emerald-600 font-bold hover:underline">一覧を見る <i class="fas fa-arrow-right ml-1"></i></a>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- News Card 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&q=80&w=800" alt="News 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-sm text-emerald-600 font-bold">MATCH REPORT</span>
+                    <h4 class="text-xl font-bold mt-2 mb-4 leading-snug">劇的アディショナルタイム弾で開幕戦を制す！</h4>
+                    <p class="text-gray-500 text-sm mb-4">2024.05.10 | VS 浜松オーシャンズ</p>
+                </div>
+            </div>
+            <!-- News Card 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1551958219-acbc608c6377?auto=format&fit=crop&q=80&w=800" alt="News 2" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-sm text-blue-600 font-bold">EVENT</span>
+                    <h4 class="text-xl font-bold mt-2 mb-4 leading-snug">ファン感謝デー開催決定！5月25日スタジアムにて。</h4>
+                    <p class="text-gray-500 text-sm mb-4">2024.05.08 | クラブニュース</p>
+                </div>
+            </div>
+            <!-- News Card 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&q=80&w=800" alt="News 3" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-sm text-emerald-600 font-bold">ACADEMY</span>
+                    <h4 class="text-xl font-bold mt-2 mb-4 leading-snug">U-18セレクションの実施について</h4>
+                    <p class="text-gray-500 text-sm mb-4">2024.05.05 | アカデミー情報</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="matches" class="py-24 bg-emerald-950 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-emerald-400 font-bold mb-2">NEXT MATCH</h2>
+            <h3 class="text-4xl font-black italic mb-12 uppercase">試合日程</h3>
+            
+            <div class="bg-white/5 backdrop-blur-md rounded-3xl p-8 md:p-12 mb-12">
+                <div class="flex flex-col md:flex-row items-center justify-around gap-8">
+                    <div class="flex flex-col items-center">
+                        <div class="w-32 h-32 bg-emerald-800 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-shield-alt text-5xl text-emerald-400"></i>
+                        </div>
+                        <span class="text-2xl font-black">EMERALD CITY FC</span>
+                        <span class="text-emerald-400 font-bold text-sm">HOME</span>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-emerald-400 font-black text-2xl mb-2">VS</div>
+                        <div class="text-4xl md:text-6xl font-black mb-4 tracking-tighter">05.19 SUN</div>
+                        <div class="text-xl font-bold mb-4">15:00 KICK OFF</div>
+                        <div class="text-gray-400">エメラルド・アリーナ</div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <div class="w-32 h-32 bg-gray-800 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-shield-alt text-5xl text-gray-400"></i>
+                        </div>
+                        <span class="text-2xl font-black">TOKYO SPIRITS</span>
+                        <span class="text-gray-400 font-bold text-sm">AWAY</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Roster Section -->
+    <section id="team" class="py-24 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-emerald-600 font-bold mb-2">PLAYERS & STAFF</h2>
+            <h3 class="text-4xl font-black italic">選手・スタッフ紹介</h3>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Player 1 -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-2xl bg-gray-200 aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?auto=format&fit=crop&q=80&w=400" alt="Player 1" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-emerald-900 to-transparent text-white">
+                        <div class="text-3xl font-black mb-1 italic">#10</div>
+                        <div class="font-bold text-lg">佐藤 健太</div>
+                        <div class="text-xs text-emerald-300">FW / Captain</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Player 2 -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-2xl bg-gray-200 aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1510566337590-2fc1f21d0faa?auto=format&fit=crop&q=80&w=400" alt="Player 2" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-emerald-900 to-transparent text-white">
+                        <div class="text-3xl font-black mb-1 italic">#01</div>
+                        <div class="font-bold text-lg">高橋 優樹</div>
+                        <div class="text-xs text-emerald-300">GK</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Player 3 -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-2xl bg-gray-200 aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=400" alt="Player 3" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-emerald-900 to-transparent text-white">
+                        <div class="text-3xl font-black mb-1 italic">#04</div>
+                        <div class="font-bold text-lg">山田 竜司</div>
+                        <div class="text-xs text-emerald-300">DF</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Player 4 -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-2xl bg-gray-200 aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1521412644187-c49fa0b4e6a1?auto=format&fit=crop&q=80&w=400" alt="Player 4" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-emerald-900 to-transparent text-white">
+                        <div class="text-3xl font-black mb-1 italic">#08</div>
+                        <div class="font-bold text-lg">中村 翔</div>
+                        <div class="text-xs text-emerald-300">MF</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <h3 class="text-3xl font-black italic mb-2">お問い合わせ</h3>
+                    <p class="text-gray-500">ファンレター、取材依頼、スポンサー契約についてはこちらから</p>
+                </div>
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold mb-2">お名前</label>
+                            <input type="text" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="山田 太郎">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-2">メールアドレス</label>
+                            <input type="email" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="mail@example.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-2">件名</label>
+                        <select class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                            <option>一般のお問い合わせ</option>
+                            <option>チケットについて</option>
+                            <option>スポンサーシップ</option>
+                            <option>その他</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-2">メッセージ内容</label>
+                        <textarea class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500 h-32" placeholder="こちらにご記入ください"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-xl transition duration-300">
+                        メッセージを送信する
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-950 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="md:col-span-2">
+                <div class="flex items-center space-x-2 mb-6">
+                    <i class="fas fa-futbol text-3xl text-emerald-400"></i>
+                    <span class="text-2xl font-black">EMERALD CITY <span class="text-emerald-400">FC</span></span>
+                </div>
+                <p class="text-gray-400 max-w-sm mb-6">
+                    私たちの街に、夢と興奮を。地域に根ざし、世界を目指すプロサッカークラブです。
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-emerald-500 transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-emerald-500 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-emerald-500 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-emerald-500 transition"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-bold mb-6 text-lg">クイックリンク</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="#home" class="hover:text-emerald-400">ホーム</a></li>
+                    <li><a href="#news" class="hover:text-emerald-400">最新ニュース</a></li>
+                    <li><a href="#matches" class="hover:text-emerald-400">試合日程</a></li>
+                    <li><a href="#team" class="hover:text-emerald-400">チーム紹介</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-6 text-lg">スタジアム情報</h4>
+                <p class="text-gray-400 mb-2 font-bold">エメラルド・アリーナ</p>
+                <p class="text-gray-400 text-sm">
+                    〒000-0000<br>
+                    東京都エメラルド区サッカー町 1-2-3
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-white/10 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 EMERALD CITY FC. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Simple Message Box (Replacement for alert) -->
+    <div id="message-box" class="fixed top-24 left-1/2 transform -translate-x-1/2 bg-emerald-600 text-white px-8 py-4 rounded-2xl shadow-2xl z-[100] hidden opacity-0 transition-opacity duration-300">
+        メッセージを送信しました！
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form submission handling
+        const contactForm = document.getElementById('contact-form');
+        const messageBox = document.getElementById('message-box');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Clear form
+            contactForm.reset();
+
+            // Show success message
+            messageBox.classList.remove('hidden');
+            setTimeout(() => {
+                messageBox.classList.add('opacity-100');
+            }, 10);
+
+            // Hide after 3 seconds
+            setTimeout(() => {
+                messageBox.classList.remove('opacity-100');
+                setTimeout(() => {
+                    messageBox.classList.add('hidden');
+                }, 300);
+            }, 3000);
+        });
+
+        // Smooth scroll adjustment for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const offset = 80; // height of the navbar
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - offset,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
